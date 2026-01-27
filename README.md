@@ -1,5 +1,5 @@
 # maiiamz
-## College student trying to make her way into the creative tech industry
+College student trying to make her way into the creative tech industry
 
 ---
 
