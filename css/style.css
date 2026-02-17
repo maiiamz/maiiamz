@@ -7,17 +7,26 @@ body {
     margin: 50px;
 }
 
-h1, h2, h3, h4, h5, h6{
+main{
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
     font-family: "gothique-mn", sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-size: 3em;
-    letter-spacing: 20px;
-    line-height: 1em;
-}
+header {
 
-h3{
-    font-size: 2em;
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        letter-spacing: 20px;
+        line-height: 1em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
 }
