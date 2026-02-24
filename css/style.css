@@ -1,8 +1,21 @@
+:root {
+    --font-family: "jetsam-collection-kugelkopf", sans-serif;
+    --font-title: "gothique-mn", sans-serif;
+    --accent-color: rgb(246, 166, 160);
+    --background-color: black;
+    --color-text: rgb(255, 61, 46);
+    --color-links: rgb(214, 85, 154);
+}
+
+html{
+    font-size: 10px;
+}
+
 body {
-    background-color: black;
-    color: rgb(255, 61, 46);
-    font-family: "jetsam-collection-kugelkopf", sans-serif;
-    font-size: 25px;
+    background-color: var(--background-color);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 2rem;
     letter-spacing: 5px;
     margin: 50px;
 }
@@ -14,7 +27,8 @@ margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "gothique-mn", sans-serif;
+    font-family: var(--font-title);
+    text-ttransform: lowercase;
 }
 
 header {
@@ -29,4 +43,41 @@ header {
     h3 {
         font-size: 2em;
     }
+}
+
+p {
+    max-width: 100ch;
+}
+
+a {
+    padding: .5em 1em;
+    text-align: center;
+    display: inline-block;
+    margin: .5em;
+    border: 2px solid var(--accent-color);
+    background-color: var(--background-color);
+    color: var(--background-color);
+    width: 200px;
+    color: var(--accent-color);
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--accent-color);
+    opacity: .8;
+}
+
+a:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+
+a:active {
+    color: var(--accent-color);
+    opacity: .8;
+}
+
+a:hover{
+    color: var(--color-links);
 }
